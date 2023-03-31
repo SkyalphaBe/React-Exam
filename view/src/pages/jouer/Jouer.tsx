@@ -1,12 +1,12 @@
 import React from "react";
-import Qwiz from "../creer/Qwiz/Qwiz";
+import Qwiz from "../../Components/Qwiz/Qwiz";
 
 
 function Jouer() {
     return(
-        <div className={"jouer"}>
-            <h1>Choix du Quiz</h1>
-            <div className={"jouerContent"}>
+        <div className={"d-flex justify-content-center align-items-center flex-column w-100 text-white"}>
+            <h1 className={"bg-primary rounded p-1 text-bg-"}>Choix du Quiz</h1>
+            <div className={"jouerContent w-75"}>
                <Qwiz titre={"Quiz 1"} nbQuestion={"5"}/>
             </div>
             <div>
