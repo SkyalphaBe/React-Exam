@@ -29,11 +29,13 @@ function Creer() {
                         <label htmlFor="">4-</label>
                         <input type="text"/>
                     </div>
+                    <button>ok</button>
                 </div>
 
                 <div className={"questionQwiz"}>
 
                 </div>
+                <button>Valider</button>
             </div>
       </div>
   );
