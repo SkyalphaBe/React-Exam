@@ -11,8 +11,9 @@ route.get('/',
 route.post('/create'
     ,
     (req: Request, res: Response) => {
-        const {} = req.body;
-        ObjetService.createObjet();
-        res.sendStatus(201);
+    console.log(req.body);
+        const {nom} = req.body;
+        const id = ObjetService.createObjet(nom);
+        res.send(id.lastInsertRowid)
     })
 export default route;

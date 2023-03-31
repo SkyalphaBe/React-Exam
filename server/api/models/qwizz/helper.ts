@@ -5,9 +5,9 @@ export namespace ObjetHelper {
     export const getAllQwizz = (): Array<Qwizz> => {
         return database.prepare('SELECT * FROM qwizz').all();
     }
-    export const createObjet =(nom:String,nbQuestion:number) => {
-            database
-                .prepare('INSERT INTO qwizz(nom,nbQuestion) VALUES(?,?)')
-                .run([nom,nbQuestion]);
+    export const createObjet =(nom:String) => {
+           return  database
+                .prepare('INSERT INTO qwizz(nom) VALUES(?)')
+                .run([nom]);
         }
 }

@@ -5,7 +5,7 @@ export namespace ObjetService {
     export const getAllObjets = (): Array<Qwizz> => {
         return ObjetHelper.getAllQwizz();
     }
-    export const createObjet = (): void => {
-        //ObjetHelper.createObjet();
+    export const createObjet = (nom:String) => {
+        return ObjetHelper.createObjet(nom);
     }
 }

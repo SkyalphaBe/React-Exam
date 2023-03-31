@@ -14,15 +14,13 @@ const loadDatabase = (db: Database): void => {
         CREATE TABLE IF NOT EXISTS qwizz
         (
             qwizzId INTEGER PRIMARY KEY AUTOINCREMENT,
-            nom VARCHAR2 NOT NULL,
-            nb_questions INTEGER NOT NULL
+            nom VARCHAR2 NOT NULL
         );
 
         CREATE TABLE IF NOT EXISTS question
         (
             questionId INTEGER PRIMARY KEY AUTOINCREMENT,
             title VARCHAR2 NOT NULL,
-            content VARCHAR2 NOT NULL,
             reponse1 VARCHAR2 NOT NULL,
             reponse2 VARCHAR2 NOT NULL,
             reponse3 VARCHAR2 NOT NULL,
